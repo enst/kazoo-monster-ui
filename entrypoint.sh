@@ -1,6 +1,6 @@
 #!/bin/bash
 
-service bigcouch start
+service httpd restart
 
 exec /bin/bash "$@"
 
