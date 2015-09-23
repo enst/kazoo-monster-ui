@@ -1,10 +1,7 @@
 FROM bingli/kazoo-base
 MAINTAINER Bing Li <bingli1000@gmail.com>
 
-RUN yum install -y kazoo-ui \
-                    monster-ui-accounts monster-ui-core monster-ui-numbers \
-                    monster-ui-pbxs monster-ui-voip monster-ui-webhooks \
-                    httpd
+RUN yum install -y httpd
                     
 RUN yum -y --nogpgcheck localinstall http://repo.2600hz.com/Packages/Kazoo-UI/CentOS_6/noarch/3.21/kazoo-ui-3.21-0.el6.noarch.rpm \
            http://repo.2600hz.com/Packages/Monster-UI-Core/CentOS_6/noarch/3.21/monster-ui-core-3.21-4.el6.noarch.rpm \
